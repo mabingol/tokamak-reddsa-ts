@@ -1,0 +1,31 @@
+{
+  "name": "reddsa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && mocha \"dist/**/*_test.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@noble/curves": "^1.9.6",
+    "poseidon-bls12381": "^1.0.2",
+    "@types/chai": "^5.2.2",
+    "@types/mocha": "^10.0.10",
+    "chai": "^5.2.1",
+    "ethers": "^6.15.0",
+    "mocha": "^11.7.1",
+    "poseidon-bls12381-circom": "^1.0.0",
+    "snarkjs": "^0.7.5",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.0",
+    "typescript": "^5.9.2",
+    "circom_tester": "^0.0.24"
+  }
+}
