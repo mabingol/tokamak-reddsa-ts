@@ -11,7 +11,6 @@ const n: bigint = bls12_381.G1.Point.CURVE().n;
 const DST_NONCE = new TextEncoder().encode("TokamakAuth-EDDSA-POSEIDON-NONCE-v1");
 const DST_CHALLENGE = new TextEncoder().encode("TokamakAuth-EDDSA-POSEIDON-CHALLENGE-v1");
 
-
 // ---------- tiny bigint + poseidon utils ----------
 const mod = (x: bigint) => ((x % n) + n) % n;
 const add = (a: bigint, b: bigint) => mod(a + b);
